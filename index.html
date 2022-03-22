@@ -5,11 +5,79 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Sign Up Form</title>
 </head>
 
 <body>
-
+  <aside class="aside">
+    <header class="aside-header">
+      <svg viewBox="0 0 16 16" class="aside-logo">
+        <use xlink:href="./assets/logo.svg#logo">
+      </svg>
+      <h1 class="aside-title">calmness</h1>
+    </header>
+    <footer>
+      <div class="author-info">
+        <p>Image by <a href="http://www.albertomielgo.com/">Alberto Mielgo</a> on <a
+            href="http://www.albertomielgo.com/">www.albertomielgo.com</a></p>
+      </div>
+    </footer>
+  </aside>
+  <main class="main">
+    <div class="introduction">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams.</p>
+      <p>Sign up <em class="marked">now</em> to get started.</p>
+      <p>You <em class="marked">know</em> you want to.</p>
+    </div>
+    <div class="form-wrapper">
+      <h2 class="form-title">Let's do this!</h2>
+      <div class="main-form">
+        <form>
+          <div class="form-row">
+            <div class="first-name form-name">
+              <label for="name">first name</label>
+              <input type="text" name="name" id="name" minlength="2">
+            </div>
+            <div class="last-name form-name">
+              <label for="last">last name</label>
+              <input type="text" name="last" id="last">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="email">
+              <label for="email">email</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="phone">
+              <label for="phone">phone</label>
+              <input type="phone" name="phone" id="phone">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="password">
+              <label for="password">password</label>
+              <input type="password" name="password" id="password" required pattern="[\w\d]{6,}">
+              <div class="attention">* Password do not match</div>
+            </div>
+            <div class="confirm">
+              <label for="confirm">confirm password</label>
+              <input type="password" name="confirm" id="confirm" required pattern="[\w\d]{6,}">
+            </div>
+          </div>
+          <input type="submit" id="submit-form" class="hidden">
+        </form>
+      </div>
+    </div>
+    <div class="button-section">
+      <label for="submit-form">Create Account</label>
+      <p>Already have an acccount? <a href="#" class="marked">Log In</a></p>
+    </div>
+  </main>
 </body>
 
 </html>
